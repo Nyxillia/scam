@@ -4,10 +4,10 @@ echo "discord/discord-server.txt"
 sort discord/discord-server.txt | uniq -c | grep -v '^ *1 '
 echo "discord/discord-user.txt"
 sort discord/discord-user.txt | uniq -c | grep -v '^ *1 '
-echo "number/sms/sms-numbers.txt"
-sort number/sms/sms-numbers.txt | uniq -c | grep -v '^ *1 '
-echo "number/telephone/telephone-numbers.txt"
-sort number/telephone/telephone-numbers.txt | uniq -c | grep -v '^ *1 '
+echo "number/sms-numbers.txt"
+sort number/sms-numbers.txt | uniq -c | grep -v '^ *1 '
+echo "number/telephone-numbers.txt"
+sort number/telephone-numbers.txt | uniq -c | grep -v '^ *1 '
 echo "web/websites.txt"
 sort web/websites.txt | uniq -c | grep -v '^ *1 '
 echo ""
