@@ -17,6 +17,11 @@ then
     cd web
     mv websites.txt websites && sort websites > websites.txt && rm websites
     cd ..
+
+    cd social-stuff
+    mv facebook.txt facebook && sort facebook > facebook.txt && rm facebook
+    cd ..
+
     echo ""
     echo "sorting done"
 fi
@@ -38,6 +43,8 @@ then
     sort number/telephone-numbers.txt | uniq -c | grep -v '^ *1 '
     echo "web/websites.txt"
     sort web/websites.txt | uniq -c | grep -v '^ *1 '
+    echo "social-stuff/facebook.txt"
+    sort social-stuff/facebook.txt | uniq -c | grep -v '^ *1 '
     echo ""
 fi
 echo "done..."
