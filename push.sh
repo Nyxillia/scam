@@ -11,10 +11,8 @@ social-stuff/facebook.txt
 "
 
 main() {
-    read -p "sort? (y/n) " sort
-    if [ $sort = y ]; then func_sort; fi
-    read -p "test for duplicates? (y/n) " testing
-    if [ $testing = y ]; then func_testing; fi
+    func_sort
+    func_testing
     read -p "push to github? (y/n) " push
     if [ $push = y ]; then func_push; fi
     echo "\ndone"
