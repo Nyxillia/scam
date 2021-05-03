@@ -39,7 +39,7 @@ func_testing() {
 }
 
 func_push() {
-    git add *
+    git add -A
     git commit -m "automated push"
     git push
 }
