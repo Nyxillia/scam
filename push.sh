@@ -8,6 +8,7 @@ number/sms-numbers.txt
 number/telephone-numbers.txt
 web/websites.txt
 csv_database.csv
+merged_csv_database.csv
 "
 
 main() {
@@ -22,7 +23,7 @@ func_sort() {
     echo "sorting..."
     for file in $FILES
     do
-        sort "$file" -o "$file"
+        sort "$file" -n -o "$file"
     done
     echo "sorting done\n"
 }
