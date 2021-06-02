@@ -14,8 +14,7 @@ merged_csv_database.csv
 main() {
     func_sort
     func_testing
-    read -p "push to github? (y/n) " push
-    if [ $push = y ]; then func_push; fi
+    func_push
     echo "done"
 }
 
