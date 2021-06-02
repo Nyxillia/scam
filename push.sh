@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 FILES="
 discord/discord-bots.txt
@@ -16,7 +16,7 @@ main() {
     func_testing
     read -p "push to github? (y/n) " push
     if [ $push = y ]; then func_push; fi
-    echo "\ndone"
+    echo "done"
 }
 
 func_sort() {
@@ -25,7 +25,7 @@ func_sort() {
     do
         sort "$file" -n -o "$file"
     done
-    echo "sorting done\n"
+    echo "sorting done"
 }
 
 func_testing() {
@@ -34,7 +34,7 @@ func_testing() {
         echo "$file"
         sort "$file" | uniq -c | grep -v '^ *1'
     done
-    echo "done...\n"
+    echo "done..."
 }
 
 func_push() {
