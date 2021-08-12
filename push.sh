@@ -7,7 +7,6 @@ discord/discord-user.txt
 number/sms-numbers.txt
 number/telephone-numbers.txt
 web/websites.txt
-csv_database.csv
 merged_csv_database.csv
 "
 
